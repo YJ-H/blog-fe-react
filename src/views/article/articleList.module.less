@@ -1,0 +1,30 @@
+.page {
+  margin: 20px 10px;
+  .body {
+    min-height: 80vh;
+    .articleItem {
+      cursor: pointer;
+      border-bottom: 1px solid #e8e8e8;
+      &:hover {
+        background-color: #e8e8e8;
+      }
+      .metaList {
+        display: flex;
+        align-items: baseline;
+        white-space: nowrap;
+        .metaItem {
+          color: rgb(178, 186, 194);
+          &:not(:last-child)::after {
+            content: "·";
+            color: rgb(178, 186, 194);
+            margin: 0px 0.4em;
+          }
+        }
+      }
+      .articleTitle {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
