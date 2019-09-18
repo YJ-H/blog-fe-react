@@ -24,8 +24,8 @@ interface Article {
 
 const renderArticleItem = (item: Article): ReactElement => {
   return (
-    <Link to={'/articleDetail/' + item._id}>
-      <Card key={item._id} bordered={false} className={style.articleItem} bodyStyle={ { 'padding': '10p 240px' } }>
+    <Link key={item._id} to={'/articleDetail/' + item._id}>
+      <Card bordered={false} className={style.articleItem} bodyStyle={ { 'padding': '10p 240px' } }>
           <div>
             <div className={style.metaList}>
               <span className={style.metaItem}>{item.user.name}</span>
