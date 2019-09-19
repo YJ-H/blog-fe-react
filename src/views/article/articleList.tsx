@@ -52,7 +52,6 @@ const ArticleList: FunctionComponent = (): ReactElement => {
 
   useEffect(() => {
     getArticleList()
-    console.log(12312321)
   }, [])
   return (
     <div className={style.page}>
